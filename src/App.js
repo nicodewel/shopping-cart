@@ -2,6 +2,7 @@ import './App.css';
 import CartHeader from './CartHeader';
 import CartFooter from './CartFooter';
 import CartItems from './CartItems';
+import CartItem from './CartItem';
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <div className="App">
     <CartHeader />
-    <CartItems />
+    <CartItems items={cartItemsList}/>
     <CartFooter copyright="2016" />
     </div>
   );
