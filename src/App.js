@@ -1,8 +1,8 @@
 import './App.css';
-import CartHeader from './CartHeader';
-import CartFooter from './CartFooter';
-import CartItems from './CartItems';
-import CartItem from './CartItem';
+import CartHeader from './components/CartHeader';
+import CartFooter from './components/CartFooter';
+import CartItems from './components/CartItems';
+import CartItem from './components/CartItem';
 
 function App() {
 
