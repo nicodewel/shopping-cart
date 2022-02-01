@@ -15,7 +15,7 @@ class CartForm extends React.Component {
             <form onSubmit={this.onSubmit}>
                 <div className="form-group">
                     <h4>Add product</h4>
-                    <input className></input>ame="form-control" placeholder="Productname" onChange={this.onChange} name="name" />
+                    <input className="form-control" placeholder="Productname" onChange={this.onChange} name="name" />
                     <input className="form-control" placeholder="Price" onChange={this.onChange} name="priceInCents" />
                     <input className="form-control" placeholder="Quantity" onChange={this.onChange} name="quantity" />
                 </div>
