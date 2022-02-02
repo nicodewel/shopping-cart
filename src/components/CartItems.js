@@ -14,6 +14,14 @@ class CartItems extends React.Component {
     id: 43
   }
 
+  getTotalPrice = () => {
+    let totalPrice = 0;
+    this.state.items.forEach((item) => {
+      totalPrice += item.product.priceInCents * item.quantity
+    })
+    return totalPrice / 100;
+  }
+
   addItem = (item) => {
     this.setState({
       items: [
@@ -45,6 +53,9 @@ class CartItems extends React.Component {
           {
             this.state.items.map((cartItem) => <CartItem key={cartItem.product.id} product={cartItem.product} quantity={cartItem.quantity} />)
           }
+        </div>
+        <div>
+          Total Price: ${this.getTotalPrice()}
         </div>
         <CartForm onProductAdd={this.addItem} />
       </div>
